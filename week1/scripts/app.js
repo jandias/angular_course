@@ -10,7 +10,7 @@
 		$scope.launchAmountMsg = "";
 		$scope.checkLaunchAmount = function() {
 			if ($scope.dishes == "") {
-				$scope.launchAmountMsg = "Empty";
+				$scope.launchAmountMsg = "Please enter data first";
 				return;
 			}
 			$scope.launchAmountMsg = isItTooMuch($scope.dishes) ?
