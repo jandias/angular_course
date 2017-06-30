@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" ng-app="digestCycleExplorer">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <script type="text/javascript" src="scripts/angular.min.js"></script>
+  <script type="text/javascript" src="scripts/app.js"></script>
+  <style>
+    .message { font-size: 1.3em; font-weight: bold; }
+  </style>
+  <title>Digest Cycle explorer</title>
+</head>
+<body>
+ <div class="container" ng-controller="CounterController">
+   <h1>Digest Cycle explorer</h1>
+
+   <div class="form-group">
+   <button class="btn btn-default" ng-click="logNumberOfWatchers()">Log # of watchers
+   </button>
+   </div>
+   <div class="form-group">
+     <button class="btn btn-default" ng-click="incrementCounter()">Increment Counter</button>
+   </div>
+   <div class="form-group message">
+     <p>Counter: {{counter}}</p>
+   </div>
+ </div>
+
+</body>
+</html>
